@@ -3,17 +3,18 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, viewport-fit=cover">
-<meta name="theme-color" content="#c2185b">
+<meta name="theme-color" content="#5c0030">
+<meta name="description" content="Dóraságok – rázd meg és megtudod.">
+
+<!-- iOS: teljes képernyős app a kezdőképernyőről -->
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
 <meta name="apple-mobile-web-app-title" content="Dóraságok">
-<title>Dóraságok</title>
+<link rel="apple-touch-icon" href="data:image/png;base64,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">
+<link rel="icon" href="data:image/png;base64,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">
 
-<!-- ===================================================================== -->
-<!--  APP IKON (opcionális, base64 SVG – nem kell külső fájl)              -->
-<!-- ===================================================================== -->
-<link rel="apple-touch-icon" href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxODAgMTgwIj48cmVjdCB3aWR0aD0iMTgwIiBoZWlnaHQ9IjE4MCIgZmlsbD0iIzhlMDA0MCIvPjxjaXJjbGUgY3g9IjkwIiBjeT0iOTAiIHI9IjYyIiBmaWxsPSIjZTkxZTYzIi8+PGNpcmNsZSBjeD0iOTAiIGN5PSI5MCIgcj0iMjYiIGZpbGw9IiNmZmYiLz48dGV4dCB4PSI5MCIgeT0iMTAxIiBmb250LWZhbWlseT0iSGVsdmV0aWNhLEFyaWFsIiBmb250LXNpemU9IjM0IiBmb250LXdlaWdodD0iYm9sZCIgZmlsbD0iIzExMSIgdGV4dC1hbmNob3I9Im1pZGRsZSI+ODwvdGV4dD48L3N2Zz4=">
+<title>Dóraságok</title>
 
 <style>
 /* ===================================================================== */
@@ -23,8 +24,7 @@
   --magenta-deep:#5c0030;
   --magenta:#c2185b;
   --magenta-bright:#ff2d95;
-  --magenta-soft:#e0559a;
-  --ink:#120009;
+  --ink:#0d0006;
   --white:#ffffff;
 }
 *{box-sizing:border-box;-webkit-tap-highlight-color:transparent;}
@@ -32,9 +32,9 @@ html,body{height:100%;margin:0;padding:0;overflow:hidden;overscroll-behavior:non
 body{
   font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Helvetica,Arial,sans-serif;
   background:radial-gradient(circle at 50% 22%, var(--magenta) 0%, #8e0040 45%, var(--magenta-deep) 100%);
+  background-attachment:fixed;
   color:var(--white);
-  display:flex;flex-direction:column;align-items:center;
-  justify-content:space-between;
+  display:flex;flex-direction:column;align-items:center;justify-content:space-between;
   padding:calc(env(safe-area-inset-top) + 22px) 18px calc(env(safe-area-inset-bottom) + 20px);
   text-align:center;
   user-select:none;-webkit-user-select:none;
@@ -48,7 +48,6 @@ h1{
   font-size:clamp(30px,9vw,54px);
   font-weight:800;
   letter-spacing:.02em;
-  color:var(--white);
   text-shadow:0 2px 0 rgba(0,0,0,.35), 0 0 26px rgba(255,45,149,.55);
 }
 .sub{
@@ -67,8 +66,7 @@ h1{
   width:min(78vw,320px);
   height:min(78vw,320px);
   border-radius:50%;
-  background:
-    radial-gradient(circle at 32% 26%, #ff8cc4 0%, var(--magenta-bright) 22%, var(--magenta) 52%, #8e0040 78%, #4a0026 100%);
+  background:radial-gradient(circle at 32% 26%, #ff8cc4 0%, var(--magenta-bright) 22%, var(--magenta) 52%, #8e0040 78%, #4a0026 100%);
   box-shadow:
     inset -14px -20px 44px rgba(0,0,0,.55),
     inset 12px 14px 40px rgba(255,255,255,.20),
@@ -86,29 +84,24 @@ h1{
 }
 .ball:active{transform:scale(.97);}
 
-/* fehér korong + fekete ablak */
+/* fekete középkorong, vékony fehér gyűrűvel */
 .window{
   position:relative;
-  width:62%;height:62%;
+  width:66%;height:66%;
   border-radius:50%;
-  background:var(--white);
-  box-shadow:inset 0 3px 10px rgba(0,0,0,.28), 0 3px 12px rgba(0,0,0,.35);
+  background:radial-gradient(circle at 42% 34%, #241019 0%, var(--ink) 62%, #000 100%);
+  box-shadow:
+    0 0 0 3px rgba(255,255,255,.92),
+    0 0 0 7px rgba(0,0,0,.18),
+    inset 0 6px 18px rgba(0,0,0,.85);
   display:flex;align-items:center;justify-content:center;
+  padding:9%;
   overflow:hidden;
 }
-.window::before{ /* fekete háromszög-ablak */
-  content:"";position:absolute;inset:0;margin:auto;
-  width:100%;height:100%;
-  background:var(--ink);
-  clip-path:polygon(50% 4%, 96% 88%, 4% 88%);
-  opacity:.96;
-}
 #answer{
-  position:relative;z-index:2;
-  width:74%;
-  margin-top:9%;
-  font-size:clamp(11px,3.5vw,17px);
-  line-height:1.32;
+  width:100%;
+  font-size:clamp(13px,4.3vw,21px);
+  line-height:1.3;
   font-weight:700;
   color:var(--white);
   opacity:0;
@@ -116,6 +109,7 @@ h1{
   transition:opacity .45s ease, transform .45s cubic-bezier(.2,1.4,.4,1);
   text-wrap:balance;
   hyphens:auto;
+  text-shadow:0 1px 3px rgba(0,0,0,.6);
 }
 #answer.show{opacity:1;transform:scale(1);}
 
@@ -130,28 +124,21 @@ h1{
 }
 .ball.shaking{animation:shakeit .62s ease;}
 
-/* --- lábléc / gomb --- */
+/* --- lábléc --- */
 footer{flex:0 0 auto;width:100%;max-width:420px;}
 .hint{
   font-size:clamp(12px,3.6vw,15px);
   color:rgba(255,255,255,.78);
-  min-height:1.4em;
-  margin:0 0 12px;
-  font-weight:500;
+  min-height:1.4em;margin:0 0 12px;font-weight:500;
 }
-button{
-  font-family:inherit;
-  font-size:15px;font-weight:700;
-  color:var(--magenta-deep);
-  background:var(--white);
-  border:0;border-radius:999px;
-  padding:14px 30px;
-  cursor:pointer;
-  box-shadow:0 6px 18px rgba(0,0,0,.35);
-  letter-spacing:.02em;
+/* iOS haptika-trükk: a kapcsolónak a DOM-ban kell lennie, de nem látszik.
+   NE tedd display:none-ra, mert akkor nem vált ki rezgést. */
+.haptic{
+  position:fixed;bottom:0;left:0;
+  width:1px;height:1px;opacity:.01;
+  pointer-events:none;border:0;margin:0;padding:0;
+  appearance:none;-webkit-appearance:none;
 }
-button:active{transform:translateY(1px);}
-button[hidden]{display:none;}
 </style>
 </head>
 <body>
@@ -163,19 +150,21 @@ button[hidden]{display:none;}
 
 <div class="stage">
   <div class="ball" id="ball" role="button" tabindex="0" aria-label="Jóslat kérése">
-    <div class="window"><div id="answer"></div></div>
+    <div class="window"><div id="answer" aria-live="polite"></div></div>
   </div>
 </div>
 
 <footer>
   <p class="hint" id="hint">Rázd meg a telefont, vagy koppints a golyóra</p>
-  <button id="motionBtn" hidden>Rázás bekapcsolása</button>
 </footer>
+
+<!-- iOS 17.4+ haptika: ennek a kapcsolónak a programozott átbillentése rezgést vált ki -->
+<input class="haptic" id="haptic" type="checkbox" switch tabindex="-1" aria-hidden="true">
 
 <script>
 /* ===================================================================== */
 /*  ITT SZERKESZTHETŐK A JÓKÍVÁNSÁGOK                                    */
-/*  Csak írj új sorokat közéjük, idézőjelben, vesszővel elválasztva.     */
+/*  Új sort idézőjelben, a végén vesszővel. Ennyi.                       */
 /* ===================================================================== */
 const WISHES = [
   "Ma valami szép fog történni veled.",
@@ -220,49 +209,63 @@ const WISHES = [
   "Bízz magadban – tudod te a választ."
 ];
 /* ===================================================================== */
-/*  Innentől már nem kell szerkeszteni semmit.                           */
+/*  Innentől nem kell szerkeszteni semmit.                               */
 /* ===================================================================== */
 
 (function () {
   "use strict";
 
-  const ball      = document.getElementById("ball");
-  const answerEl  = document.getElementById("answer");
-  const hintEl    = document.getElementById("hint");
-  const motionBtn = document.getElementById("motionBtn");
+  var ball      = document.getElementById("ball");
+  var answerEl  = document.getElementById("answer");
+  var hintEl    = document.getElementById("hint");
+  var hapticEl  = document.getElementById("haptic");
 
-  /* --- ismétlés nélküli sorsolás: kevert lista, kimerülésig --- */
-  let queue = [];
+  /* --- ismétlés nélküli sorsolás --- */
+  var queue = [], lastShown = null;
   function refill() {
-    const last = answerEl.textContent;
     queue = WISHES.slice();
-    for (let i = queue.length - 1; i > 0; i--) {
-      const j = Math.floor(Math.random() * (i + 1));
-      [queue[i], queue[j]] = [queue[j], queue[i]];
+    for (var i = queue.length - 1; i > 0; i--) {
+      var j = Math.floor(Math.random() * (i + 1));
+      var t = queue[i]; queue[i] = queue[j]; queue[j] = t;
     }
-    // ne ugyanazzal induljon, mint ami épp látszik
-    if (queue.length > 1 && queue[queue.length - 1] === last) {
-      [queue[0], queue[queue.length - 1]] = [queue[queue.length - 1], queue[0]];
+    if (queue.length > 1 && queue[queue.length - 1] === lastShown) {
+      var s = queue[0]; queue[0] = queue[queue.length - 1]; queue[queue.length - 1] = s;
     }
   }
   function nextWish() {
     if (!queue.length) refill();
-    return queue.pop();
+    lastShown = queue.pop();
+    return lastShown;
   }
   refill();
 
-  /* --- jóslat megjelenítése --- */
-  let busy = false;
+  /* --- rezgés ---
+     Androidon a Vibration API-t használjuk. Az iOS Safari nem támogatja,
+     ott az iOS 17.4+ „switch" vezérlő átbillentése ad egy apró koppanást. */
+  function haptic() {
+    if (navigator.vibrate) {
+      try { if (navigator.vibrate(35) !== false) return; } catch (e) {}
+    }
+    if (hapticEl) {
+      try {
+        hapticEl.checked = !hapticEl.checked;
+        hapticEl.dispatchEvent(new Event("change", { bubbles: true }));
+      } catch (e) {}
+    }
+  }
+
+  /* --- jóslat --- */
+  var busy = false;
   function reveal() {
     if (busy || !WISHES.length) return;
     busy = true;
 
+    haptic();
+
     answerEl.classList.remove("show");
     ball.classList.remove("shaking");
-    void ball.offsetWidth;              // reflow, hogy újrainduljon az animáció
+    void ball.offsetWidth;
     ball.classList.add("shaking");
-
-    if (navigator.vibrate) { try { navigator.vibrate([28, 55, 28]); } catch (e) {} }
 
     setTimeout(function () {
       answerEl.textContent = nextWish();
@@ -271,75 +274,108 @@ const WISHES = [
     }, 430);
   }
 
-  /* --- koppintás / billentyű --- */
   ball.addEventListener("click", reveal);
   ball.addEventListener("keydown", function (e) {
     if (e.key === "Enter" || e.key === " ") { e.preventDefault(); reveal(); }
   });
 
-  /* --- rázás érzékelése --- */
-  const THRESHOLD = 15;      // érzékenység: kisebb szám = érzékenyebb
-  const COOLDOWN  = 1100;    // ms, két rázás között
-  let lastShake = 0;
-  let lx = null, ly = null, lz = null;
+  /* --- rázás --- */
+  var THRESHOLD = 15;     // kisebb szám = érzékenyebb
+  var COOLDOWN  = 1100;   // ms két rázás között
+  var lastShake = 0, lx = null, ly = null, lz = null;
 
   function onMotion(e) {
-    const a = e.accelerationIncludingGravity || e.acceleration;
-    if (!a || a.x === null) return;
+    var a = e.accelerationIncludingGravity || e.acceleration;
+    if (!a || a.x === null || a.x === undefined) return;
     if (lx === null) { lx = a.x; ly = a.y; lz = a.z; return; }
-
-    const delta = Math.abs(a.x - lx) + Math.abs(a.y - ly) + Math.abs(a.z - lz);
+    var delta = Math.abs(a.x - lx) + Math.abs(a.y - ly) + Math.abs(a.z - lz);
     lx = a.x; ly = a.y; lz = a.z;
-
-    const now = Date.now();
-    if (delta > THRESHOLD && now - lastShake > COOLDOWN) {
-      lastShake = now;
-      reveal();
-    }
+    var now = Date.now();
+    if (delta > THRESHOLD && now - lastShake > COOLDOWN) { lastShake = now; reveal(); }
   }
 
+  var motionOn = false;
   function startMotion() {
+    if (motionOn) return;
+    motionOn = true;
     window.addEventListener("devicemotion", onMotion, { passive: true });
     hintEl.textContent = "Rázd meg a telefont!";
-    motionBtn.hidden = true;
+  }
+  function noMotion() {
+    hintEl.textContent = "Koppints a golyóra";
   }
 
-  const hasMotion = typeof DeviceMotionEvent !== "undefined";
-  const needsPermission = hasMotion && typeof DeviceMotionEvent.requestPermission === "function";
+  var hasMotion = typeof DeviceMotionEvent !== "undefined";
+  var needsPerm = hasMotion && typeof DeviceMotionEvent.requestPermission === "function";
 
-  if (needsPermission) {
-    // iOS 13+ : felhasználói gomb kell hozzá
-    motionBtn.hidden = false;
-    hintEl.textContent = "Koppints a golyóra – vagy kapcsold be a rázást";
-    motionBtn.addEventListener("click", function () {
-      DeviceMotionEvent.requestPermission().then(function (state) {
-        if (state === "granted") {
-          startMotion();
-        } else {
-          motionBtn.hidden = true;
-          hintEl.textContent = "Rázás nem elérhető – koppints a golyóra";
-        }
+  if (needsPerm) {
+    /* iOS 13+ : a rendszer megköveteli, hogy az engedélykérés felhasználói
+       koppintásból induljon – automatikusan, betöltéskor nem lehet.
+       Ezért nincs külön „Bekapcsolás" gomb: az első koppintás bárhol a
+       képernyőn elindítja a kérdést. Ha nem kap engedélyt, marad a koppintás. */
+    var pending = false;
+    function requestMotion(auto) {
+      if (motionOn || pending) return;
+      pending = true;
+      var p;
+      try { p = DeviceMotionEvent.requestPermission(); }
+      catch (e) { pending = false; return; }
+      p.then(function (state) {
+        if (state === "granted") { startMotion(); haptic(); }
+        else if (auto) { pending = false; }     // gesztussal még újrapróbáljuk
+        else { noMotion(); }
       }).catch(function () {
-        motionBtn.hidden = true;
-        hintEl.textContent = "Rázás nem elérhető – koppints a golyóra";
+        pending = false;                        // gesztus kellett hozzá
       });
+    }
+
+    hintEl.textContent = "Koppints a golyóra – utána rázhatod is";
+
+    // 1) betöltéskor megpróbáljuk (ha korábban már engedélyezte, azonnal megy)
+    requestMotion(true);
+
+    // 2) az első bármilyen koppintás kiváltja a rendszer kérdését
+    ["pointerup", "touchend", "click"].forEach(function (evt) {
+      document.addEventListener(evt, function () { requestMotion(false); }, { passive: true });
     });
   } else if (hasMotion) {
     startMotion();
     hintEl.textContent = "Rázd meg a telefont, vagy koppints a golyóra";
   } else {
-    hintEl.textContent = "Koppints a golyóra";
+    noMotion();
   }
 
   /* --- kezdőállapot --- */
   answerEl.textContent = "Rázz meg!";
   answerEl.classList.add("show");
 
-  /* --- ne ugráljon / ne zoomoljon a lap iOS-en --- */
+  /* --- iOS: ne zoomoljon, ne ugráljon --- */
   document.addEventListener("gesturestart", function (e) { e.preventDefault(); });
   document.addEventListener("touchmove", function (e) {
     if (e.touches.length > 1) e.preventDefault();
   }, { passive: false });
+
+  /* --- telepíthetőség: manifest beágyazva, nem kell külön fájl --- */
+  try {
+    var icon = document.querySelector("link[rel='apple-touch-icon']").getAttribute("href");
+    var manifest = {
+      name: "Dóraságok", short_name: "Dóraságok",
+      start_url: ".", display: "standalone",
+      background_color: "#5c0030", theme_color: "#5c0030",
+      icons: [{ src: icon, sizes: "180x180", type: "image/png", purpose: "any" }]
+    };
+    var link = document.createElement("link");
+    link.rel = "manifest";
+    link.href = URL.createObjectURL(new Blob([JSON.stringify(manifest)], { type: "application/manifest+json" }));
+    document.head.appendChild(link);
+  } catch (e) {}
+
+  /* --- offline működés, ha az sw.js is fel van töltve (ha nincs, nem baj) --- */
+  if ("serviceWorker" in navigator && location.protocol === "https:") {
+    window.addEventListener("load", function () {
+      navigator.serviceWorker.register("sw.js").catch(function () {});
+    });
+  }
 })();
 </script>
 </body>

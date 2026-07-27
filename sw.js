@@ -1,6 +1,6 @@
 /* Dóraságok – offline gyorsítótár.
    Ha új verziót töltesz fel, növeld a CACHE számát (v1 -> v2). */
-const CACHE = "dorasagok-v1";
+const CACHE = "dorasagok-v2";
 
 self.addEventListener("install", (e) => {
   e.waitUntil(
